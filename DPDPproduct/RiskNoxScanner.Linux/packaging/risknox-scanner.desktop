@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Risknox PII Scanner
+Comment=Find Aadhaar, PAN, card, bank and other personal data in local files
+Exec=RiskNoxScanner --gui %F
+Icon=risknox
+Terminal=false
+Categories=Utility;Security;
+StartupWMClass=RiskNoxScanner

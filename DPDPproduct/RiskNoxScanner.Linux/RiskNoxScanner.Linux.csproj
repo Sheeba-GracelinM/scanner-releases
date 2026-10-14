@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>RiskNox</RootNamespace>
+    <AssemblyName>RiskNoxScanner</AssemblyName>
+    <Version>1.0.0</Version>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ServerGarbageCollector>false</ServerGarbageCollector>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <TieredPGO>true</TieredPGO>
+    <BuiltInComInteropSupport>false</BuiltInComInteropSupport>
+    <ApplicationManifest />
+
+    <!-- Standalone: one executable, no .NET install needed on the target machine -->
+    <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">linux-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- Platform-neutral engine shared with the Windows build: detection, readers, pipeline,
+       report, CLI and upload are the same code, so results are identical on both OSes. -->
+  <ItemGroup>
+    <Compile Include="..\RiskNoxScanner\Detectors.cs" Link="Shared\Detectors.cs" />
+    <Compile Include="..\RiskNoxScanner\Readers.cs" Link="Shared\Readers.cs" />
+    <Compile Include="..\RiskNoxScanner\Scanner.cs" Link="Shared\Scanner.cs" />
+    <Compile Include="..\RiskNoxScanner\Uploader.cs" Link="Shared\Uploader.cs" />
+    <Compile Include="..\RiskNoxScanner\Cli.cs" Link="Shared\Cli.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.22" />
+    <PackageReference Include="bblanchon.PDFium.Linux" Version="157.0.8086" />
+  </ItemGroup>
+
+</Project>

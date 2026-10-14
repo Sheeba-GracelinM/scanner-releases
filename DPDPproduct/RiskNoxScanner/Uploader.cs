@@ -28,7 +28,12 @@ public static class Uploader
         {
             Directory.CreateDirectory(ConfigDir);
             if (string.IsNullOrWhiteSpace(value)) { if (File.Exists(KeyFile)) File.Delete(KeyFile); }
-            else File.WriteAllText(KeyFile, value.Trim());
+            else
+            {
+                File.WriteAllText(KeyFile, value.Trim());
+                // Linux/Unix: the key is a credential, keep it private to the user.
+                if (!OperatingSystem.IsWindows()) File.SetUnixFileMode(KeyFile, UnixFileMode.UserRead | UnixFileMode.UserWrite);
+            }
         }
     }
 
