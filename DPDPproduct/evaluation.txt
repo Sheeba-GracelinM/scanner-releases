@@ -1,0 +1,54 @@
+
+### all findings (>= low)
+type              TP   FP   FN precision  recall
+aadhaar           71    0    0     1.000   1.000
+bank_account      65    0    0     1.000   1.000
+card               7    0    0     1.000   1.000
+dob               45    0    0     1.000   1.000
+email             45    0    0     1.000   1.000
+ifsc              65    0    0     1.000   1.000
+pan               69    0    0     1.000   1.000
+passport           2    0    0     1.000   1.000
+phone             45    3    0     0.938   1.000
+upi                3    0    0     1.000   1.000
+voter_id           1    0    0     1.000   1.000
+TOTAL            418    3    0     0.993   1.000
+
+### reported (>= medium)
+type              TP   FP   FN precision  recall
+aadhaar           71    0    0     1.000   1.000
+bank_account      65    0    0     1.000   1.000
+card               7    0    0     1.000   1.000
+dob               45    0    0     1.000   1.000
+email             45    0    0     1.000   1.000
+ifsc              65    0    0     1.000   1.000
+pan               69    0    0     1.000   1.000
+passport           2    0    0     1.000   1.000
+phone             45    0    0     1.000   1.000
+upi                3    0    0     1.000   1.000
+voter_id           1    0    0     1.000   1.000
+TOTAL            418    0    0     1.000   1.000
+
+### high confidence only
+type              TP   FP   FN precision  recall
+aadhaar           70    0    1     1.000   0.986
+bank_account       0    0   65       nan   0.000
+card               7    0    0     1.000   1.000
+dob                0    0   45       nan   0.000
+email             45    0    0     1.000   1.000
+ifsc              65    0    0     1.000   1.000
+pan               69    0    0     1.000   1.000
+passport           0    0    2       nan   0.000
+phone             45    0    0     1.000   1.000
+upi                0    0    3       nan   0.000
+voter_id           0    0    1       nan   0.000
+TOTAL            301    0  117     1.000   0.720
+
+### Per-file mismatches (all findings)
+  Misc/hard_negatives.txt                phone         expected   0  detected   3  (conf: {'high': 0, 'medium': 0, 'low': 3})
+
+### Sanity: random 12-digit numbers passing the Verhoeff checksum: 9.8% (1963/20000)
+-> checksum alone cannot make an Aadhaar hit 'high'; context keywords/column headers are required.
+
+### Skipped-file handling
+{"encrypted_office": 1, "legacy_office_not_supported": 1, "pdf_unreadable_or_encrypted": 1, "unsupported_type": 1}

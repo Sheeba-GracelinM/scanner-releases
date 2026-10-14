@@ -1,0 +1,335 @@
+{
+ "findings": {
+  "Desktop/app_server.log": {
+   "aadhaar": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "card": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "email": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "pan": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   }
+  },
+  "Desktop/hr_notes.txt": {
+   "dob": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   },
+   "passport": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   }
+  },
+  "Downloads/customer_cards.txt": {
+   "card": {
+    "count": 6,
+    "high": 6,
+    "low": 0,
+    "medium": 0,
+    "unique": 6
+   },
+   "phone": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "upi": {
+    "count": 3,
+    "high": 0,
+    "low": 0,
+    "medium": 3,
+    "unique": 3
+   }
+  },
+  "Downloads/hr_employee_master.csv": {
+   "aadhaar": {
+    "count": 40,
+    "high": 40,
+    "low": 0,
+    "medium": 0,
+    "unique": 40
+   },
+   "bank_account": {
+    "count": 40,
+    "high": 0,
+    "low": 0,
+    "medium": 40,
+    "unique": 40
+   },
+   "dob": {
+    "count": 40,
+    "high": 0,
+    "low": 0,
+    "medium": 40,
+    "unique": 40
+   },
+   "email": {
+    "count": 40,
+    "high": 40,
+    "low": 0,
+    "medium": 0,
+    "unique": 39
+   },
+   "ifsc": {
+    "count": 40,
+    "high": 40,
+    "low": 0,
+    "medium": 0,
+    "unique": 40
+   },
+   "pan": {
+    "count": 40,
+    "high": 40,
+    "low": 0,
+    "medium": 0,
+    "unique": 40
+   },
+   "phone": {
+    "count": 40,
+    "high": 40,
+    "low": 0,
+    "medium": 0,
+    "unique": 40
+   }
+  },
+  "Downloads/kyc_details.json": {
+   "dob": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   },
+   "email": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "passport": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   },
+   "voter_id": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   }
+  },
+  "Downloads/offer_letter_0.docx": {
+   "dob": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   },
+   "email": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "pan": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "phone": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   }
+  },
+  "Downloads/offer_letter_1.docx": {
+   "dob": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   },
+   "email": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "pan": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "phone": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   }
+  },
+  "Downloads/offer_letter_2.docx": {
+   "dob": {
+    "count": 1,
+    "high": 0,
+    "low": 0,
+    "medium": 1,
+    "unique": 1
+   },
+   "email": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "pan": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   },
+   "phone": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   }
+  },
+  "Downloads/salary_sheet.xlsx": {
+   "aadhaar": {
+    "count": 15,
+    "high": 15,
+    "low": 0,
+    "medium": 0,
+    "unique": 15
+   },
+   "bank_account": {
+    "count": 15,
+    "high": 0,
+    "low": 0,
+    "medium": 15,
+    "unique": 15
+   },
+   "ifsc": {
+    "count": 15,
+    "high": 15,
+    "low": 0,
+    "medium": 0,
+    "unique": 15
+   },
+   "pan": {
+    "count": 15,
+    "high": 15,
+    "low": 0,
+    "medium": 0,
+    "unique": 15
+   }
+  },
+  "Downloads/scan_notes.txt": {
+   "aadhaar": {
+    "count": 5,
+    "high": 4,
+    "low": 0,
+    "medium": 1,
+    "unique": 5
+   },
+   "phone": {
+    "count": 1,
+    "high": 1,
+    "low": 0,
+    "medium": 0,
+    "unique": 1
+   }
+  },
+  "HR_Share/payroll_march.csv": {
+   "aadhaar": {
+    "count": 10,
+    "high": 10,
+    "low": 0,
+    "medium": 0,
+    "unique": 10
+   },
+   "bank_account": {
+    "count": 10,
+    "high": 0,
+    "low": 0,
+    "medium": 10,
+    "unique": 10
+   },
+   "ifsc": {
+    "count": 10,
+    "high": 10,
+    "low": 0,
+    "medium": 0,
+    "unique": 10
+   },
+   "pan": {
+    "count": 10,
+    "high": 10,
+    "low": 0,
+    "medium": 0,
+    "unique": 10
+   }
+  },
+  "Misc/hard_negatives.txt": {
+   "phone": {
+    "count": 3,
+    "high": 0,
+    "low": 3,
+    "medium": 0,
+    "unique": 3
+   }
+  }
+ },
+ "skipped": {
+  "encrypted_office": 1,
+  "legacy_office_not_supported": 1,
+  "pdf_unreadable_or_encrypted": 1,
+  "unsupported_type": 1
+ }
+}

@@ -1,0 +1,6 @@
+__pycache__/
+bin/
+obj/
+dist/
+*.pyc
+dist_new/

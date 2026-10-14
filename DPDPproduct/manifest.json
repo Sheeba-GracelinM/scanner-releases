@@ -1,0 +1,66 @@
+{
+  "Desktop/app_server.log": {
+    "aadhaar": 1,
+    "card": 1,
+    "email": 1,
+    "pan": 1
+  },
+  "Desktop/hr_notes.txt": {
+    "dob": 1,
+    "passport": 1
+  },
+  "Downloads/customer_cards.txt": {
+    "card": 6,
+    "phone": 1,
+    "upi": 3
+  },
+  "Downloads/hr_employee_master.csv": {
+    "aadhaar": 40,
+    "bank_account": 40,
+    "dob": 40,
+    "email": 40,
+    "ifsc": 40,
+    "pan": 40,
+    "phone": 40
+  },
+  "Downloads/kyc_details.json": {
+    "dob": 1,
+    "email": 1,
+    "passport": 1,
+    "voter_id": 1
+  },
+  "Downloads/offer_letter_0.docx": {
+    "dob": 1,
+    "email": 1,
+    "pan": 1,
+    "phone": 1
+  },
+  "Downloads/offer_letter_1.docx": {
+    "dob": 1,
+    "email": 1,
+    "pan": 1,
+    "phone": 1
+  },
+  "Downloads/offer_letter_2.docx": {
+    "dob": 1,
+    "email": 1,
+    "pan": 1,
+    "phone": 1
+  },
+  "Downloads/salary_sheet.xlsx": {
+    "aadhaar": 15,
+    "bank_account": 15,
+    "ifsc": 15,
+    "pan": 15
+  },
+  "Downloads/scan_notes.txt": {
+    "aadhaar": 5,
+    "phone": 1
+  },
+  "HR_Share/payroll_march.csv": {
+    "aadhaar": 10,
+    "bank_account": 10,
+    "ifsc": 10,
+    "pan": 10
+  }
+}

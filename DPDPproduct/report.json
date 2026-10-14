@@ -1,0 +1,1866 @@
+{
+  "meta": {
+    "scanner_version": "0.2.0",
+    "host": "LAPTOP-6R94TOJ2",
+    "os": "Windows-10-10.0.26200-SP0",
+    "role": "general",
+    "paths": [
+      "C:\\Users\\anees\\Downloads"
+    ],
+    "started": "2026-10-06T14:31:55",
+    "duration_s": 101.7,
+    "ocr_available": false,
+    "note": "Endpoint PII posture only; not a DPDP compliance verdict. Scores/tiers are tunable heuristics. No file content is stored. OCR is used as a fallback for image-only PDFs and supported image files when available."
+  },
+  "summary": {
+    "files_seen": 614,
+    "files_scanned": 245,
+    "files_with_pii": 47,
+    "cache_hits": 0,
+    "by_tier": {
+      "medium": 1,
+      "low": 46
+    },
+    "by_location_class": {
+      "violation": 47
+    },
+    "findings_by_type": {
+      "phone": {
+        "high": 19,
+        "medium": 22,
+        "low": 4
+      },
+      "email": {
+        "high": 16,
+        "medium": 30,
+        "low": 14
+      },
+      "dob": {
+        "high": 0,
+        "medium": 13,
+        "low": 0
+      },
+      "card": {
+        "high": 0,
+        "medium": 2,
+        "low": 0
+      }
+    },
+    "skipped_by_reason": {
+      "ocr_engine_missing": 52,
+      "unsupported_type": 261,
+      "pdf_no_text_layer_ocr_needed": 45,
+      "legacy_office_not_supported": 5,
+      "encrypted": 2,
+      "office_lock_file": 4
+    },
+    "unsupported_by_extension": {
+      ".cpk": 64,
+      ".exe": 55,
+      ".h": 42,
+      ".fx": 20,
+      ".zip": 19,
+      ".dll": 11,
+      ".m3u8": 8,
+      ".torrent": 5,
+      ".bin": 4,
+      ".msi": 4,
+      ".crdownload": 3,
+      ".ovpn": 2,
+      ".py": 2,
+      ".pem": 2,
+      ".mp4": 2,
+      ".ipynb": 2,
+      ".url": 2,
+      ".orig": 2,
+      ".dds": 2,
+      ".svg": 1
+    }
+  },
+  "findings": [
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Interview Excel Workbook.xlsx",
+      "size": 57680,
+      "modified": "2022-05-11T19:38:20",
+      "sha256": "327f72fd02f61dca4c37a346457177cba85998e9504e4e00f2274b31e2d25fe1",
+      "types": {
+        "card": {
+          "high": 0,
+          "medium": 2,
+          "low": 0,
+          "count": 2,
+          "unique": 1
+        }
+      },
+      "score": 10.0,
+      "tier": "medium",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Ajeeshwal anto_Resume.pdf",
+      "size": 76628,
+      "modified": "2022-10-02T16:43:35",
+      "sha256": "ae877ab758fe53d89a17706cf281ebf4d14ac5de41ebd8dea7daf98839c29875",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "count": 2,
+          "unique": 2
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 9.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Ajeeshwal_CV (2).pdf",
+      "size": 76678,
+      "modified": "2022-12-28T16:50:53",
+      "sha256": "e3c68c7c432083ac7b5612d27ed30968b2b4175e3dc215693bb273d033957eb3",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "count": 2,
+          "unique": 2
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 9.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Anjo_Resume (4).pdf",
+      "size": 76612,
+      "modified": "2022-10-02T16:35:20",
+      "sha256": "7015fcb99bc2eff8c038a103db8e78f168448a8437d03307a0001f8796524e09",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "count": 2,
+          "unique": 2
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 9.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Anjo_Resume (5).pdf",
+      "size": 76628,
+      "modified": "2022-10-02T16:43:22",
+      "sha256": "ae877ab758fe53d89a17706cf281ebf4d14ac5de41ebd8dea7daf98839c29875",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "count": 2,
+          "unique": 2
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 9.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Ajeeshwal_CV.pdf",
+      "size": 67554,
+      "modified": "2022-06-01T20:47:53",
+      "sha256": "d86dd96da07d49e463b065e5a6ca6b120a950e386286c7bd9e3062f73ba6d873",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Ajeeshwal_Resume.pdf",
+      "size": 67439,
+      "modified": "2021-12-28T18:16:03",
+      "sha256": "841e9530d73730fb53c4f19b04adb4fa336057bf7e9d5e61c4e199bf23953ee9",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Ajeshwal_Anto_CV.pdf",
+      "size": 69336,
+      "modified": "2022-06-29T09:41:21",
+      "sha256": "7afd745074979674e4e77b1d46976a94b68618db72673bd06964588e587f391a",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Anjo_Resume (1).pdf",
+      "size": 77358,
+      "modified": "2022-09-02T17:43:10",
+      "sha256": "998181c6ac80090a9f8b4ad81df56e78d2905f1c473775f7324c8c5995a71dda",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Anjo_Resume (2).pdf",
+      "size": 77358,
+      "modified": "2022-09-02T17:43:10",
+      "sha256": "998181c6ac80090a9f8b4ad81df56e78d2905f1c473775f7324c8c5995a71dda",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Anjo_Resume (3).pdf",
+      "size": 77358,
+      "modified": "2022-09-02T17:43:10",
+      "sha256": "998181c6ac80090a9f8b4ad81df56e78d2905f1c473775f7324c8c5995a71dda",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Anjo_Resume.pdf",
+      "size": 64985,
+      "modified": "2022-04-19T18:43:24",
+      "sha256": "33c32efcbfa9ad014672a6d932497f4806e058ba2c6191aa9f7386b01a5cd589",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 6.8,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Amal_P_Johny.pdf",
+      "size": 198875,
+      "modified": "2022-02-10T15:05:46",
+      "sha256": "33fa5ff504be92e42db31cef5f7780000a4c2a04cb67040a6e573bd1961c439c",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 2.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Simple_CV__1_ (1).pdf",
+      "size": 198873,
+      "modified": "2022-02-10T15:00:29",
+      "sha256": "2d271989b7844ebe03fd52b888f363d8661e0d21222290d74ed4465ef119cfbb",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 2.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Simple_CV__1_.pdf",
+      "size": 200127,
+      "modified": "2022-02-09T15:25:24",
+      "sha256": "7a96a55b1759a862bd477b73f8a9a247928ecbc9139227482ba763475c8f2888",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 2.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1. Copy_of_Solar Roof Top Meter Reading and Manual Bill Calc Sheet for SDOs_Version 4 _Updated.xlsx",
+      "size": 30915,
+      "modified": "2024-09-25T00:01:53",
+      "sha256": "d423219fe924ac722f7619389e732d5bc52edfb6f4c03cebff4aa9d7634dc39f",
+      "types": {
+        "phone": {
+          "high": 1,
+          "medium": 0,
+          "low": 2,
+          "count": 3,
+          "unique": 3
+        }
+      },
+      "score": 2.4,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Abhijit U E.resume.docx",
+      "size": 1293933,
+      "modified": "2023-10-04T23:14:23",
+      "sha256": "8f4b46612777acc40439dce9e86fad9c9bd6f59aa58b867dcd831c0d2a409d0f",
+      "types": {
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 0,
+          "low": 1,
+          "count": 1,
+          "unique": 1
+        },
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 2.2,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal.Resume.docx",
+      "size": 423061,
+      "modified": "2024-01-26T14:10:03",
+      "sha256": "f967e98d2279936007f329f2de1fce1b3a11d18491b05792e7d9d6612f507c9a",
+      "types": {
+        "dob": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 0,
+          "low": 1,
+          "count": 1,
+          "unique": 1
+        },
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 2.2,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\549-P193.pdf",
+      "size": 769605,
+      "modified": "2021-01-22T10:53:46",
+      "sha256": "2a7b49705b07f6aaeabc47e925425b287aa0bc6b2767f2feef122e0d2b4ac726",
+      "types": {
+        "email": {
+          "high": 2,
+          "medium": 0,
+          "low": 0,
+          "count": 2,
+          "unique": 2
+        }
+      },
+      "score": 2.0,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Abhiraj resume (1).pdf",
+      "size": 426919,
+      "modified": "2024-08-11T10:13:32",
+      "sha256": "0513f20b7daac4c8971bada0c464dd2bf29b04e552c2dcc1874e51ecf163ee80",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\ANEESHWAL ANTO(11) (1).pdf",
+      "size": 163327,
+      "modified": "2024-09-23T20:33:58",
+      "sha256": "7fc177cd4fe5cc4a5eefa694340ff424ff2647b1f98c7ea518d5dfab51410f7c",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\ANEESHWAL ANTO(11).pdf",
+      "size": 171657,
+      "modified": "2024-09-23T20:22:54",
+      "sha256": "c70425d3ddf3ef8d0b75d76939ff00982689174239d76e0587f0705f88822919",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\ANEESHWAL ANTO.pdf",
+      "size": 171657,
+      "modified": "2024-09-11T17:26:46",
+      "sha256": "c70425d3ddf3ef8d0b75d76939ff00982689174239d76e0587f0705f88822919",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal Resume(finl.pdf",
+      "size": 501819,
+      "modified": "2024-07-04T13:35:45",
+      "sha256": "9fbd8a38015042077fdc0716f131c05c0c9e37ca1a26624de909c75a2fb5042f",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal.Resume Adishankara institute of engineering and technology.pdf",
+      "size": 137746,
+      "modified": "2024-08-28T18:01:32",
+      "sha256": "a22714c9faf5b8fbb3102333aa7cd663a8b3d80bb385bceaab18ca314567d5f6",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal.Resume CARESTACK.pdf",
+      "size": 137746,
+      "modified": "2024-08-13T23:47:37",
+      "sha256": "a22714c9faf5b8fbb3102333aa7cd663a8b3d80bb385bceaab18ca314567d5f6",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal.Resume(NEW).pdf",
+      "size": 48467,
+      "modified": "2024-02-04T22:41:12",
+      "sha256": "f34a2963d1cd088658351ec541e7b5edd0227117eeb2bea021851612a1680e65",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal.Resume(NEWW) (1).pdf",
+      "size": 137544,
+      "modified": "2024-08-13T23:44:13",
+      "sha256": "c6421726d31426b13773a7d5faf691d6eb143adc0133e74d0fc6bb730308e279",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal.Resume(NEWW).pdf",
+      "size": 48129,
+      "modified": "2024-02-04T22:44:26",
+      "sha256": "a527ca9ce1f38689845d2bd7fb0bb2778815da0ac5c8b7ab900ce1fdd824f5cd",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\AneeshwalAnto (cyber resume).pdf",
+      "size": 128851,
+      "modified": "2024-08-21T23:40:18",
+      "sha256": "aae55a52666117527e4e711df4219cbadcd74fd1cfc926cad77d8f8a5c9e97b9",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\AneeshwalAnto (Nasscomm).pdf",
+      "size": 245092,
+      "modified": "2024-09-11T16:52:27",
+      "sha256": "e12ede62f4f29192c9b73b4ac587611d197be3b91e75854599e5f31ca23108a0",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Dona_kurian_resume (1).pdf",
+      "size": 144586,
+      "modified": "2024-09-23T20:52:08",
+      "sha256": "9d82726ccf2c5400516dc5212069cd18d481dfe418956e2104028442c70a6543",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Dona_kurian_resume (2).pdf",
+      "size": 143299,
+      "modified": "2024-09-23T20:57:53",
+      "sha256": "15a1bee72b50c7ce71e7b32b4b13032eb3f18a5bb8a341880c76f58e0935ae80",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Dona_kurian_resume (3).pdf",
+      "size": 165136,
+      "modified": "2024-09-23T21:02:21",
+      "sha256": "fffc3514c3198ff868ede00686792a17d0f2e7229938c2d76e4d217b38ff0520",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Dona_kurian_resume (4).pdf",
+      "size": 165144,
+      "modified": "2024-09-23T21:46:04",
+      "sha256": "e51aab68801139c22f1be3f8fe40aae2f6b517d24a95d28969c1265bbf353960",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Dona_kurian_resume.pdf",
+      "size": 132230,
+      "modified": "2024-09-23T20:46:07",
+      "sha256": "8b337ec8c378d8d126d460670385369dec069e811e1777356ba22b56dd2d9dfe",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Resume new.docx",
+      "size": 23522,
+      "modified": "2024-02-04T15:28:46",
+      "sha256": "62a5b90d84dbdff88b307407ee414d0f22e065508f2d87996a6a208a5816effb",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Resume2.docx",
+      "size": 19157,
+      "modified": "2024-08-21T21:07:58",
+      "sha256": "ac1c8489421152ed44682ab8087ddb33a2cd417725c94fab2eebbc4a34f38527",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\WAL.RESUMEE final.pdf",
+      "size": 142614,
+      "modified": "2024-07-25T03:55:40",
+      "sha256": "17f03cebf6f140edeb63e17a0daf24dbda9a912f61bc65c9ad2cf7390b3921c6",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\WAL.RESUMEE.pdf",
+      "size": 143306,
+      "modified": "2024-07-25T03:51:28",
+      "sha256": "f3ff808361fd2ace70663a2456421edf13c6293f9502e9764216cbae3b067363",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\WALRESUMEE final_240725_120147.pdf",
+      "size": 135129,
+      "modified": "2024-08-21T21:17:57",
+      "sha256": "7b5982683d7279119192094d8950a6bae540e2833f349ebd01955fececa0add8",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        },
+        "phone": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\AC4882601.pdf",
+      "size": 887971,
+      "modified": "2026-07-28T10:50:32",
+      "sha256": "23e036cb308855c4dbb7097d9212a327185d666c73b4fb6ed58462b87823f3b3",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.0,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\signed doc.pdf",
+      "size": 912807,
+      "modified": "2026-07-28T11:05:23",
+      "sha256": "63d448685ba054be4f42c9e32a00048a51faaac164bae3c5cf67ef987a1d9d29",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.0,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\INVG69255\\INVG69255.pdf",
+      "size": 82458,
+      "modified": "2026-04-27T10:59:56",
+      "sha256": "e659ea8507ccfcfb9c950034daaedc8dc5be556217934faac18b0048b5a8a56b",
+      "types": {
+        "email": {
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 1.0,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal_mFTAAAFDN015.pdf",
+      "size": 257934,
+      "modified": "2024-08-23T12:41:26",
+      "sha256": "dc267d73441a169ee60dbf5121c0be93e02dc20be56d5f334e0342a8d34f3a3d",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\journal.pone.0267935.pdf",
+      "size": 1401064,
+      "modified": "2023-06-08T23:19:26",
+      "sha256": "d1caebc8f21ca52e2d1295a116e70e8e0c7a5909f3c60ba9e4545f099e535a69",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Quantum_computing_overview_InnotechOklahoma.pptx",
+      "size": 3773960,
+      "modified": "2021-09-27T20:41:59",
+      "sha256": "87972e176df826da836593267ae08f4c2326d442c19e281bd56a35df02b86f4a",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 1,
+          "low": 0,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.5,
+      "tier": "low",
+      "location_class": "violation"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Deep_learning_architectures_for_Brain_Tumor_detection_A_Survey(1).docx",
+      "size": 25925,
+      "modified": "2023-11-10T06:44:29",
+      "sha256": "d22974bc37441d0c03e85a2ec50d79c9a24bc241d26ad5ec52b38a9d97470bb0",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 2,
+          "count": 2,
+          "unique": 2
+        }
+      },
+      "score": 0.2,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Deep_learning_architectures_for_Brain_Tumor_detection_A_Survey.pdf",
+      "size": 187535,
+      "modified": "2023-11-09T20:43:37",
+      "sha256": "2f4b20e41ae7027b91b57734061797c027d7d1d950c49a0ec27772b3bfa622cc",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 2,
+          "count": 2,
+          "unique": 2
+        }
+      },
+      "score": 0.2,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Exploring_the_Potential_of_Metaverse_Technology_in_Healthcare_Applications_Challenges_and_Future_Directions.pdf",
+      "size": 3155341,
+      "modified": "2023-09-20T22:53:42",
+      "sha256": "2afc66fea666b34ad91c8e89dafa5b68dd9f850d75a60644462f15f4c5b6b03f",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 2,
+          "count": 2,
+          "unique": 2
+        }
+      },
+      "score": 0.2,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Healthcare_in_Metaverse_A_Survey_on_Current_Metaverse_Applications_in_Healthcare (1).pdf",
+      "size": 4078845,
+      "modified": "2023-09-24T22:59:38",
+      "sha256": "b792c8a0f73c843479a016493c0223ea8a31b9c9fd191feeab09eb9480cb0cf0",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 2,
+          "count": 2,
+          "unique": 2
+        }
+      },
+      "score": 0.2,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\IEEE-HAC-SIGHT-Projects-CfP-COV2.pdf",
+      "size": 308563,
+      "modified": "2021-08-05T11:02:29",
+      "sha256": "4fb19f269d325086863876aed3887cbf33ed525c26668f9f87711bcbed848bbc",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 2,
+          "count": 2,
+          "unique": 1
+        }
+      },
+      "score": 0.2,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\A_Metaverse_Taxonomy_Components_Applications_and_Open_Challenges.pdf",
+      "size": 7265446,
+      "modified": "2023-09-20T22:54:10",
+      "sha256": "84c1dd6750a30926e3279f09682a6434ebd5153ed55ef0ce115b070a5bf5343f",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 1,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.1,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CYBERSECURITY-_AWARENESS_1-7_modules[1].pptx",
+      "size": 33488887,
+      "modified": "2025-03-31T14:26:52",
+      "sha256": "cbedde35284ae9914da9a311b843d0ae80abef29e87aebc7e68e0ae61fe6ff15",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 1,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.1,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Neuro-Symbolic_Speech_Understanding_in_Aircraft_Maintenance_Metaverse.pdf",
+      "size": 4546964,
+      "modified": "2023-10-09T00:24:10",
+      "sha256": "4a45b61c97fa2dae11daceb56d1b59afe9a3d98fc6868e8d0c9d75a0e8017a2c",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 1,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.1,
+      "tier": "low",
+      "location_class": "n/a"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Sample VAT Invoice.pdf",
+      "size": 179243,
+      "modified": "2026-09-14T12:16:14",
+      "sha256": "eba2b5b92f2fd161bc82ae73f466368227f750708fd9fa42587ff9a48d3ed78c",
+      "types": {
+        "email": {
+          "high": 0,
+          "medium": 0,
+          "low": 1,
+          "count": 1,
+          "unique": 1
+        }
+      },
+      "score": 0.1,
+      "tier": "low",
+      "location_class": "n/a"
+    }
+  ],
+  "skipped_notable": [
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1.proj.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\10 nd 12.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\10th mark list.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\10th-converted.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\10th.jpeg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\12th mark list.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\12th.jpeg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1644399668342.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1653145116242.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\17.12.2020 ANEESHWAL.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1721954896967_BTCSE 303 \u00e2__ DIGITAL ELECTRONICS (3).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1721955247907_BTCSE 304-OBJECT ORIENTED PROGRAMMING (1).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\1_NLRi8oO20g8iqygEZjjRrg.webp",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\2.proj.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\20201206120110215.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\activity ppt.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\AMAL.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\ANEESHWAL - BASIC CIVIL ENGINEERING.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Aneeshwal Anto (adhar).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\aneeshwal photo.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\ANEESHWAL-CHEMISTRY.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\aneeshwal_25.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\archi final.drawio.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\architecture.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Augmented-reality-architecture-comprised-by-six-elements.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\c16cf746-2a21-4f77-84ec-852cf27f43cf-219.doc",
+      "reason": "legacy_office_not_supported"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 14.45.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 14.48 (1).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 14.48 (2).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 14.48.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 16.29 (1) (1).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 16.29 (1) (2).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 16.29 (1).pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 11-23-2020 16.29.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\CamScanner 12-29-2020 19.47.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\class diagram ppt.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\collaboration.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\COMPUTER NETWORKQS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\COMPUTER ORGANISATION AND ARCHITECTURE.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\d1a0adf6-f47d-4c2e-89f4-508bfd81e71f-37.doc",
+      "reason": "legacy_office_not_supported"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\data com qs.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\DB-Module 4.ppt",
+      "reason": "legacy_office_not_supported"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\DESIGN AND ANALYSIS OF ALGORITHM LAB QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\DESIGN AND ANALYSIS OF ALGORITHM QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\diagram-export-11-13-2023-9_21_10-PM.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\DIMENSION PIC.jpeg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\discrete struc qs.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\ds lab qs.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\e19553f3200e4f639974577717fc12d0_20260923130640.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\e21a5a0c-05fd-4f37-b230-c6682c0af6c3-219.doc",
+      "reason": "legacy_office_not_supported"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\EIGITAL EC LAB QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\EMBEDDED SYSTEM LABQS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\EMBEDDED SYSTEM qs.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\fiinaalll archi.drawio.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\finalarchitecture.drawio.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\finalllllll.drawio.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Fourier Integral Module 5 Part 1.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\FULL MODULES Note-EC100 BASICS OF ELECTRONICS.pdf",
+      "reason": "encrypted"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\id.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\image.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\image2.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\image3.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\img20220525_12295006.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\it4.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\leave application.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\lit1.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\lit2.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\lit3.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\me.jpeg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\me.pic.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Mech Questions.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\mermaid-diagram.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Module 2-DB.doc",
+      "reason": "legacy_office_not_supported"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Module 4 Computer Networks Notes - Kerala Notes.pdf",
+      "reason": "encrypted"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\NAND.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\NETWORK AND INFORMATION SECURITY LAB QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\NETWORK AND INFORMATION SECURITY qs.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\nosTEAM.bmp",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\OPERATING SYSTEM LAB.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\opps lab qs.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\OPS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\OS QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\prescription.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Product write up _260430_170250.pdf.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Screenshot (27).png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Screenshot (28).png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Screenshot (29).png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Screenshot (30).png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Screenshot 11-24-2020 14.22_1.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Screenshot_2021-01-11-12-09-32-105_cn.wps.xiaomi.abroad.lite.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\sequence ppt.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\SIG.jpeg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\sign-learners(1)_auto_x2 (1).jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\sign-learners(1)_auto_x2.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\SISO.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\SYSTEM SOFTWARE QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\table.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\table2.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\THEORY OF COMPUTAITION QS.pdf",
+      "reason": "pdf_no_text_layer_ocr_needed"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\uml-1.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\WhatsApp Image 2024-05-01 at 23.51.35_0fc4ba99.jpg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\WhatsApp Image 2026-10-04 at 10.40.33 AM.jpeg",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\What_Is_Web_Application_Architecture_.png",
+      "reason": "ocr_engine_missing"
+    },
+    {
+      "path": "C:\\Users\\anees\\Downloads\\Pro Evolution Soccer 2015 - SteamGG.NET\\elamigos.jpg",
+      "reason": "ocr_engine_missing"
+    }
+  ],
+  "missing_paths": []
+}
