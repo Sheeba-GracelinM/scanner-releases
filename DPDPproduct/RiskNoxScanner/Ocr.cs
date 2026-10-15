@@ -9,6 +9,10 @@ namespace RiskNox;
 
 public static class Ocr
 {
+    /// <summary>Shown in the UI/report; the Linux build reports its own engine here.</summary>
+    public const string EngineName = "Windows built-in";
+    public const string MissingNote = "NOTE: Windows OCR engine not available; image files and scanned PDFs were skipped.";
+
     static readonly Lazy<bool> _available = new(() =>
     {
         try { return OcrEngine.TryCreateFromUserProfileLanguages() != null; }

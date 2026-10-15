@@ -100,6 +100,19 @@ public static class Scanner
     static readonly HashSet<string> ExcludeDirs = new(StringComparer.OrdinalIgnoreCase)
         { ".git", "node_modules", "__pycache__", "venv", ".venv", "site-packages", "$recycle.bin" };
 
+    // Linux/Unix only: kernel and runtime pseudo-filesystems (endless or device files) and the desktop
+    // trash, the counterpart of $recycle.bin. Empty on Windows, so Windows behaviour is unchanged.
+    static readonly HashSet<string> ExcludeRoots = OperatingSystem.IsWindows() ? [] :
+        ["/proc", "/sys", "/dev", "/run", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), ".local/share/Trash")];
+
+    static bool Excluded(string dir)
+    {
+        string name = Path.GetFileName(dir);
+        if (ExcludeDirs.Contains(name)) return true;
+        if (OperatingSystem.IsWindows()) return false;
+        return ExcludeRoots.Contains(dir) || name == ".Trash" || name.StartsWith(".Trash-", StringComparison.Ordinal);
+    }
+
     sealed record FileResult(string Path, long Size, DateTime Modified, string? Sha, Dictionary<string, TypeCount>? Types,
         Dictionary<string, List<string>>? Samples, string? Skip, string Ext);
 
@@ -127,6 +140,33 @@ public static class Scanner
         return p;
     }
 
+    /// <summary>Linux/Unix: ~/Desktop, ~/Documents, ~/Downloads may be renamed/localised through
+    /// xdg-user-dirs (~/.config/user-dirs.dirs). Returns the real folder, or null.</summary>
+    public static string? XdgUserDir(string path)
+    {
+        try
+        {
+            string home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string key = Path.GetRelativePath(home, path) switch
+            {
+                "Desktop" => "XDG_DESKTOP_DIR", "Documents" => "XDG_DOCUMENTS_DIR", "Downloads" => "XDG_DOWNLOAD_DIR", _ => "",
+            };
+            if (key.Length == 0) return null;
+            string cfg = Environment.GetEnvironmentVariable("XDG_CONFIG_HOME") is { Length: > 0 } x ? x : Path.Combine(home, ".config");
+            string file = Path.Combine(cfg, "user-dirs.dirs");
+            if (!File.Exists(file)) return null;
+            foreach (var line in File.ReadLines(file))
+            {
+                var t = line.Trim();
+                if (!t.StartsWith(key + "=")) continue;
+                string v = t[(key.Length + 1)..].Trim().Trim('"').Replace("$HOME", home);
+                return v.Length > 0 && Directory.Exists(v) && Path.GetFullPath(v) != Path.GetFullPath(home) ? v : null;
+            }
+        }
+        catch { }
+        return null;
+    }
+
     static IEnumerable<string> Walk(string root, CancellationToken ct)
     {
         var stack = new Stack<string>();
@@ -141,7 +181,7 @@ public static class Scanner
             for (int i = dirs.Length - 1; i >= 0; i--)
             {
                 var d = dirs[i];
-                if (ExcludeDirs.Contains(Path.GetFileName(d))) continue;
+                if (Excluded(d)) continue;
                 try { if ((File.GetAttributes(d) & FileAttributes.ReparsePoint) != 0) continue; } // no symlink/junction follow
                 catch { continue; }
                 stack.Push(d);
@@ -244,6 +284,7 @@ public static class Scanner
                     string home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
                     string od = Path.Combine(home, "OneDrive", Path.GetRelativePath(home, root));
                     if (Directory.Exists(od)) root = od;
+                    else if (!OperatingSystem.IsWindows() && XdgUserDir(root) is { } xdg) root = xdg;
                 }
                 if (File.Exists(root))
                 {
@@ -350,7 +391,7 @@ public static class Scanner
                 ["started"] = started.ToString("yyyy-MM-ddTHH:mm:ss"), ["duration_s"] = Math.Round(seconds, 1),
                 ["workers"] = o.Workers, ["ocr_available"] = Ocr.Available,
                 ["note"] = "Endpoint PII posture only; not a DPDP compliance verdict. Scores/tiers are tunable heuristics. " +
-                           "No file content is stored. OCR (Windows built-in engine) is used for image files and image-only PDFs when available.",
+                           $"No file content is stored. OCR ({Ocr.EngineName} engine) is used for image files and image-only PDFs when available.",
             },
             ["summary"] = new JsonObject
             {

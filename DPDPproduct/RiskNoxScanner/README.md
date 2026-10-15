@@ -17,6 +17,8 @@ RiskNoxScanner.exe --paths DIR [DIR..] [--role general|hr|finance] [--output rep
 The JSON report has the same shape as `pii_scan.py`'s, so existing tooling keeps working.
 UI errors are written to `%TEMP%\RiskNoxScanner_error.log`.
 
+A Linux build with the same UI, CLI and engine is in `../RiskNoxScanner.Linux` (see its README).
+
 ## Build
 
 Requires the .NET 10 SDK.
@@ -35,6 +37,7 @@ dotnet publish -c Release -o ..\dist      # -> dist\RiskNoxScanner.exe (self-con
 | `Ocr.cs` | Windows built-in OCR (`Windows.Media.Ocr`) for images and scanned PDFs |
 | `Scanner.cs` | Parallel pipeline (enumerator → bounded channel → N workers), cache, report |
 | `MainForm.cs`, `Widgets.cs`, `Theme.cs` | Native WinForms UI in the RiskNox theme |
+| `Cli.cs` | Command-line scan (shared with the Linux build) |
 | `Program.cs` | Entry point: window or CLI |
 
 ## Keeping results identical to the Python reference
